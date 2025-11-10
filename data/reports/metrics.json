@@ -1,0 +1,84 @@
+{
+  "metrics": {
+    "Dummy(mean)": {
+      "MSE": 3710810365979.709,
+      "RMSE": 1926346.3774668637,
+      "MAE": 1341406.0192242418,
+      "R2": -0.0004293832280424237
+    },
+    "LinearRegression": {
+      "MSE": 951402349502.678,
+      "RMSE": 975398.5593093103,
+      "MAE": 566735.0321033702,
+      "R2": 0.7435032319514979
+    },
+    "RandomForest": {
+      "MSE": 256140169091.3832,
+      "RMSE": 506102.92341714766,
+      "MAE": 241091.47036082463,
+      "R2": 0.9309449618516507
+    },
+    "SVR": {
+      "MSE": 4404424986005.221,
+      "RMSE": 2098672.195938475,
+      "MAE": 1158025.7619311695,
+      "R2": -0.18742693310873326
+    },
+    "XGBoost": {
+      "MSE": 212458402253.72388,
+      "RMSE": 460932.10156564694,
+      "MAE": 226753.27198775765,
+      "R2": 0.9427215062572479
+    },
+    "Best RandomForest": {
+      "MSE": 256140169091.3832,
+      "RMSE": 506102.92341714766,
+      "MAE": 241091.47036082463,
+      "R2": 0.9309449618516507
+    },
+    "RF + SelectKBest": {
+      "MSE": 234165152215.41092,
+      "RMSE": 483906.1398819103,
+      "MAE": 230695.34967257205,
+      "R2": 0.9368693962504563
+    },
+    "RF + RFE": {
+      "MSE": 266400169945.49518,
+      "RMSE": 516139.68065388576,
+      "MAE": 245394.01835057678,
+      "R2": 0.9281788796986791
+    },
+    "RF + PCA": {
+      "MSE": 397623355366.11615,
+      "RMSE": 630573.8302261807,
+      "MAE": 317812.64140893467,
+      "R2": 0.8928012889548548
+    }
+  },
+  "best": "XGBoost",
+  "model_path": "data/models/best_model.joblib",
+  "kbest_features": [
+    "Year",
+    "Engine",
+    "Max Power",
+    "Max Torque",
+    "Length",
+    "Width",
+    "Fuel Tank Capacity",
+    "Make_Maruti Suzuki",
+    "Make_Mercedes-Benz",
+    "Transmission_Manual"
+  ],
+  "rfe_features": [
+    "Year",
+    "Kilometer",
+    "Max Power",
+    "Max Torque",
+    "Length",
+    "Width",
+    "Height",
+    "Fuel Tank Capacity",
+    "Make_Mercedes-Benz",
+    "Fuel Type_Hybrid"
+  ]
+}

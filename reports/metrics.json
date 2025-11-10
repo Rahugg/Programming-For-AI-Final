@@ -1,0 +1,85 @@
+{
+  "metrics": {
+    "Dummy(mean)": {
+      "MSE": 4818692908848.104,
+      "RMSE": 2195152.1379731526,
+      "MAE": 1401083.910804287,
+      "R2": -7.305112754485421e-06
+    },
+    "Huber": {
+      "MSE": 2297987399678.4556,
+      "RMSE": 1515911.4089149325,
+      "MAE": 626021.411653512,
+      "R2": 0.5231063215263387
+    },
+    "RandomForest": {
+      "MSE": 483104245689.81885,
+      "RMSE": 695057.0089494954,
+      "MAE": 259497.48167475747,
+      "R2": 0.8997429834273686
+    },
+    "SVR": {
+      "MSE": 5550738071356.459,
+      "RMSE": 2356000.439591737,
+      "MAE": 1190157.465471713,
+      "R2": -0.15192620179874483
+    },
+    "XGBoost": {
+      "MSE": 446633092836.36914,
+      "RMSE": 668306.1370632243,
+      "MAE": 265072.6232364991,
+      "R2": 0.907311720420831
+    },
+    "Best RandomForest": {
+      "MSE": 475797179449.74255,
+      "RMSE": 689780.5299149451,
+      "MAE": 266585.8073453497,
+      "R2": 0.901259394569818
+    },
+    "RF + SelectKBest": {
+      "MSE": 535924593937.99506,
+      "RMSE": 732068.7084816528,
+      "MAE": 271939.4875778701,
+      "R2": 0.8887813523157893
+    },
+    "RF + RFE": {
+      "MSE": 528422988072.1297,
+      "RMSE": 726927.0858016845,
+      "MAE": 278985.84267706913,
+      "R2": 0.8903381356194456
+    },
+    "RF + PCA": {
+      "MSE": 780263663501.287,
+      "RMSE": 883325.3440840963,
+      "MAE": 354427.4419602407,
+      "R2": 0.8380744782506074
+    }
+  },
+  "best_overall": "XGBoost",
+  "best_regular": "XGBoost",
+  "model_path": "/Users/rahug/Desktop/aitu/programming-for-ai/practice-lessons/final project/models/best_model.joblib",
+  "kbest_features": [
+    "Year",
+    "Engine",
+    "Max Power",
+    "Max Torque",
+    "Length",
+    "Width",
+    "Fuel Tank Capacity",
+    "Make_Land Rover",
+    "Make_Mercedes-Benz",
+    "Transmission_Manual"
+  ],
+  "rfe_features": [
+    "Year",
+    "Kilometer",
+    "Engine",
+    "Max Power",
+    "Max Torque",
+    "Length",
+    "Width",
+    "Height",
+    "Fuel Tank Capacity",
+    "Make_Mercedes-Benz"
+  ]
+}
